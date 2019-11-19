@@ -1,0 +1,59 @@
+/* Estiliar a barra de navegacao navbar  */
+.navbar {
+  padding: 10px 0; /* espacamento em cima e baixo */
+  background-color: #1e94d2;
+}
+
+/* Usado para estilizar a cor do icone pi-bars */
+.navbar-toggle {
+  color: #fff;
+}
+
+/* Usado para adiconar a barra escura por cima da tabela de dados e posicionado a direita */
+.navbar-menu {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 210px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 9998;
+  background-color: #3a3633;
+
+  list-style: none;
+}
+
+/* Usando para estilzar o nome do Usuario Logado*/
+.navbar-usuario {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #525151;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Usado para dar espacamento no item do menu */
+.navbar-menuitem {
+  padding: 15px;
+}
+
+/* Usado para estilizar o elemento "a" que é filho do navbar-menuitem, tirar o sublinhado do link */
+.navbar-menuitem a {
+  color: #c0bbb7;
+  text-decoration: none;
+}
+
+/* Ao passar o mouse por cima do item do menu */
+.navbar-menuitem a:hover {
+  color: #fff;
+}
+
+
+/* Mudar dinamicamente a cor de fundo do menu item selecionado */
+.navbar-menuitem.ativo {
+  background-color: #494541;
+
+}
