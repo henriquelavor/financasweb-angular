@@ -3,7 +3,7 @@
     <div class="ui-g">
 
       <div class="ui-g-12">
-        <h1>Nova Pessoa</h1>
+          <h1>{{editando ? 'Edição de' : 'Nova'}} Pessoa</h1>
       </div>
 
       <div class="ui-g-12 ui-fluid">
@@ -95,11 +95,22 @@
           text="Mínimo de {{estado.errors?.minlength?.requiredLength}} caracteres"></app-message>
       </div>
 
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+          <label style="display: block;">Status</label>
+          <p-dropdown name="ativo" [options]="status"
+          placeholder="Selecione" [autoWidth]="false"  #ativo
+          [(ngModel)]="pessoa.ativo" required></p-dropdown>
+
+      </div>
+
 
       <div class="ui-g-12">
         <button pButton type="submit" label="Salvar" style="margin-right: 5px;" [disabled]="f.invalid"></button>
-        <button pButton type="submit" label="Novo" class="ui-button-info"  style="margin-right: 5px;"></button>
-        <a routerLink="/lancamentos">Voltar para pesquisa</a>
+
+        <button pButton type="submit" label="Novo" class="ui-button-info"
+        style="margin-right: 5px;" (click)="novo(f)"></button>
+
+        <a routerLink="/pessoas">Voltar para pesquisa</a>
       </div>
     </div>
 

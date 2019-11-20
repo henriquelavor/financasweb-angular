@@ -49,8 +49,6 @@ export class LancamentoCadastroComponent implements OnInit {
   ngOnInit() {
 
 
-
-
    // console.log(this.route.snapshot.params['codigo']);
     const codigoLancamento = this.route.snapshot.params['codigo'];
 

@@ -10,11 +10,13 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { InputMaskModule } from 'primeng/inputmask';
 import {InputSwitchModule} from 'primeng/inputswitch';
+import { DropdownModule } from 'primeng/dropdown';
 
 import { SharedModule } from './../shared/shared.module';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
-import { RouterModule } from '@angular/router';
+
+import { PessoasRoutingModule } from './pessoas-routing.module';
 
 
 
@@ -27,7 +29,6 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     SharedModule,
-    RouterModule,
 
     InputTextModule,
     ButtonModule,
@@ -35,7 +36,9 @@ import { RouterModule } from '@angular/router';
     TooltipModule,
     BrowserAnimationsModule,
     InputMaskModule,
-    InputSwitchModule
+    InputSwitchModule,
+    DropdownModule,
+    PessoasRoutingModule
   ],
   exports: [  //Obs: nao esta mai sendo usando devido nao ser necessario o uso do selector em app.component.ts
    // PessoasPesquisaComponent,

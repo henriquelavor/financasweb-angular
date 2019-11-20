@@ -89,7 +89,6 @@ export class LancamentoService {
   }
 
 
-
   atualizar(lancamento: Lancamento): Promise<Lancamento> {
     let headers = new HttpHeaders();
     headers = headers.set('Authorization', 'Basic YWRtaW5AZ21haWwuY29tOmFkbWlu').set('Content-Type','application/json');
@@ -104,9 +103,6 @@ export class LancamentoService {
         return lancamentoAlterado;
       });
   }
-
-
-
 
 
   buscarPorCodigo(codigo: number): Promise<Lancamento> {
