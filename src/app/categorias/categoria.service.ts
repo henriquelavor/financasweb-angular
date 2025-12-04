@@ -10,6 +10,8 @@ export class CategoriaService {
 
   categoriasUrl = 'http://localhost:8080/categorias';
 
+  //edicao do github
+  
   constructor(
     private http: HttpClient
   ) { }
